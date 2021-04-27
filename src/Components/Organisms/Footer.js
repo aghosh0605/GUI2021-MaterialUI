@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    background: "linear-gradient(45deg, #e91e63 30%, #880e4f 90%)",
+    background: "linear-gradient(45deg, #ee0979 30%, #ff6a00 90%)",
     position: "fixed",
     bottom: 0,
     right: 0,

@@ -7,7 +7,7 @@ import StopRoundedIcon from "@material-ui/icons/StopRounded";
 
 const useStyles = makeStyles({
   root: {
-    background: "linear-gradient(45deg, #ffcdd2 30%, #ffcdd2 90%)",
+    background: "linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%)",
   },
   grid: {
     padding: 0,

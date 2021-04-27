@@ -20,10 +20,10 @@ ValueLabelComponent.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-export default function TooltipSlider() {
+export default function TooltipSlider(props) {
   return (
     <div>
-      <Typography>Tooltip value label</Typography>
+      <Typography>{props.label}</Typography>
       <Slider
         ValueLabelComponent={ValueLabelComponent}
         aria-label="custom thumb label"

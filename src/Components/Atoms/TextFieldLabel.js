@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TextFieldLabel() {
+export default function TextFieldLabel(props) {
   const classes = useStyles();
   return (
     <form noValidate autoComplete="off">
@@ -16,9 +16,9 @@ export default function TextFieldLabel() {
         <TextField
           disabled
           className={classes.root}
-          label="Size"
+          label={props.label}
           id="filled-size-small"
-          defaultValue="Small"
+          defaultValue="Value"
           variant="filled"
           size="small"
         />
