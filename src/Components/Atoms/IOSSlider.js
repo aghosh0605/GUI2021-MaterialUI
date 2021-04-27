@@ -1,6 +1,6 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
 import Slider from "@material-ui/core/Slider";
+import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 const PrettoSlider = withStyles({
@@ -35,10 +35,10 @@ const PrettoSlider = withStyles({
   },
 })(Slider);
 
-export default function IOSSlider() {
+export default function IOSSlider(props) {
   return (
     <div>
-      <Typography gutterBottom>IOSSliders</Typography>
+      <Typography>{props.label}</Typography>
       <PrettoSlider
         valueLabelDisplay="auto"
         aria-label="pretto slider"

@@ -9,7 +9,7 @@ import NotificationsActiveOutlinedIcon from "@material-ui/icons/NotificationsAct
 import SettingsIcon from "@material-ui/icons/Settings";
 import WarningRoundedIcon from "@material-ui/icons/WarningRounded";
 import NightsStayRoundedIcon from "@material-ui/icons/NightsStayRounded";
-import AutorenewIcon from "@material-ui/icons/Autorenew"; //will be used with FlashAutoIcon with React State
+// import AutorenewIcon from "@material-ui/icons/Autorenew"; //will be used with FlashAutoIcon with React State
 import FlashAutoIcon from "@material-ui/icons/FlashAuto";
 
 const useStyles = makeStyles((theme) => ({

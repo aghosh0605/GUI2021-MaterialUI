@@ -4,7 +4,7 @@ import Switch from "@material-ui/core/Switch";
 export default function SlideSwitch() {
   return (
     <div>
-      <Switch />
+      <Switch color="primary" />
     </div>
   );
 }

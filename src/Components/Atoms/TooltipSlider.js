@@ -1,18 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 import Tooltip from "@material-ui/core/Tooltip";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: 300 + theme.spacing(3) * 2,
-  },
-  margin: {
-    height: theme.spacing(3),
-  },
-}));
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
@@ -31,10 +21,9 @@ ValueLabelComponent.propTypes = {
 };
 
 export default function TooltipSlider() {
-  const classes = useStyles();
   return (
     <div>
-      <Typography gutterBottom>Tooltip value label</Typography>
+      <Typography>Tooltip value label</Typography>
       <Slider
         ValueLabelComponent={ValueLabelComponent}
         aria-label="custom thumb label"
