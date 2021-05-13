@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 
 const PrettoSlider = withStyles({
   root: {
-    color: "#52af77",
+    color: "#FF8E53",
     height: 8,
     left: -3,
     // width: 100,
@@ -13,7 +13,7 @@ const PrettoSlider = withStyles({
   thumb: {
     height: 25,
     width: 25,
-    backgroundColor: "#fff",
+    backgroundColor: "#FE6B8B ",
     border: "2px solid currentColor",
     marginTop: -8,
     marginLeft: -10,
@@ -38,7 +38,7 @@ const PrettoSlider = withStyles({
 export default function IOSSlider(props) {
   return (
     <div>
-      <Typography>{props.label}</Typography>
+      <Typography style={{ fontFamily: "Perpetua" }}>{props.label}</Typography>
       <PrettoSlider
         valueLabelDisplay="auto"
         aria-label="pretto slider"

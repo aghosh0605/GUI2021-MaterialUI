@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    background: "linear-gradient(45deg, #ee0979 30%, #ff6a00 90%)",
+    background: "linear-gradient(45deg, #007991 30%, #78ffd6 90%)",
     position: "fixed",
     bottom: 0,
     right: 0,
@@ -15,6 +15,9 @@ const useStyles = makeStyles({
   grid: {
     padding: 4,
     gap: 7,
+  },
+  text: {
+    fontFamily: "Optima",
   },
 });
 
@@ -30,13 +33,21 @@ export default function Footer() {
         className={classes.grid}
       >
         <CircularProgressBar />
-        <Typography>CPU Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+        <Typography className={classes.text}>
+          CPU Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </Typography>
         <CircularProgressBar />
-        <Typography>Memory Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+        <Typography className={classes.text}>
+          Memory Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </Typography>
         <CircularProgressBar />
-        <Typography>Network Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+        <Typography className={classes.text}>
+          Network Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </Typography>
         <CircularProgressBar />
-        <Typography>Power Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
+        <Typography className={classes.text}>
+          Power Usage % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </Typography>
       </Grid>
     </div>
   );

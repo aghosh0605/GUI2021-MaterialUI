@@ -10,6 +10,7 @@ const useStyles = makeStyles({
   root: {
     margin: 10,
     padding: 20,
+    backgroundColor: "#64ffda",
   },
 });
 
@@ -26,10 +27,14 @@ export default function SliderController() {
         <TooltipSlider label="Empty" />
       </Paper>
       <Paper className={classes.root} elevation={3}>
-        <Typography align="center">Motors</Typography>
+        <Typography align="center" style={{ fontFamily: "Perpetua" }}>
+          <b>Motors</b>
+        </Typography>
         <DiscreteSlider label="Left Motor" />
         <DiscreteSlider label="Right Motor" />
-        <Typography align="center">Actuators</Typography>
+        <Typography align="center" style={{ fontFamily: "Perpetua" }}>
+          <b>Actuators</b>
+        </Typography>
         <DiscreteSlider label="Left Actuator" />
         <DiscreteSlider label="Right Actuator" />
       </Paper>

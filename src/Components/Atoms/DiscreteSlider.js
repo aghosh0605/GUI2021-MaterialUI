@@ -9,7 +9,9 @@ function valuetext(value) {
 export default function DiscreteSlider(props) {
   return (
     <div>
-      <Typography id="discrete-slider">{props.label}</Typography>
+      <Typography id="discrete-slider" style={{ fontFamily: "Perpetua" }}>
+        {props.label}
+      </Typography>
       <Slider
         defaultValue={30}
         getAriaValueText={valuetext}

@@ -23,7 +23,7 @@ ValueLabelComponent.propTypes = {
 export default function TooltipSlider(props) {
   return (
     <div>
-      <Typography>{props.label}</Typography>
+      <Typography style={{ fontFamily: "Perpetua" }}>{props.label}</Typography>
       <Slider
         ValueLabelComponent={ValueLabelComponent}
         aria-label="custom thumb label"

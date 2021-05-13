@@ -16,9 +16,15 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    fontFamily: "Times New Roman",
+  },
+  timer: {
+    flexGrow: 1,
+    fontFamily: "Courier",
   },
   appBarBasic: {
-    background: "linear-gradient(90deg, #c31432 20%, #240b36 100%)",
+    background: "linear-gradient(45deg, #2196F3 50%, #21CBF3 90%)",
+    color: "black",
   },
 }));
 
@@ -33,9 +39,11 @@ export default function AppBarBasic() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            RUDRA
+            <b>
+              <i>RUDRA</i>
+            </b>
           </Typography>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className={classes.timer}>
             Time
           </Typography>
           <AppBarRight />

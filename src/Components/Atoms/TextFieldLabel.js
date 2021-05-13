@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    padding: 20,
+    padding: 17,
   },
 });
 
@@ -14,11 +14,11 @@ export default function TextFieldLabel(props) {
     <form noValidate autoComplete="off">
       <div>
         <TextField
-          disabled
+          style={{ fontFamily: "Monaco" }}
           className={classes.root}
           label={props.label}
-          id="filled-size-small"
           defaultValue="Value"
+          id="filled-size-small"
           variant="filled"
           size="small"
         />
